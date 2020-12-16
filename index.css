@@ -1,0 +1,148 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+ color: #504B59;
+}
+
+body {
+  background-color: #504B59;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crear{
+  width: 50%;
+  padding: 10px 100px;
+}
+
+.edit {
+  width: 50%;
+  padding: 10px 100px;
+}
+
+.list {
+  width: 100%;
+  padding: 10px 30%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#error {
+  color:  #FF8C68;
+  margin-bottom: 18px;
+}
+
+input {
+  height: 50px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 16px;
+  padding-left: 12px;
+}
+
+form button {
+  margin: 16px 0 32px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  background-color: #C3B6D9;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+a {
+    padding: 15px 65px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    background-color: #C3B6D9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #2b2b2b;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+li > p {
+  margin-right: 10px;
+}
+
+li > button {
+  margin-right: 10px;
+}
+
+.contanerPopUp {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background-color: rgb(79, 74, 89,0.95);
+  transition: 0.3s;
+  transform: initial;
+}
+
+.popUp {
+  width: 480px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 6px;
+  background-color: #F5F0FF;
+  padding-bottom: 32px;
+}
+
+.containerSvg {
+  width: 100%;
+  height: 120px;
+  border-radius: 6px 6px 0 0;
+  background-color: #C3B6D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.popUp h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 32px 0 8px;
+}
+
+.popUp p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 64px;
+}
+
+.popUp svg {
+  width: 60px
+}
+
+.hide {
+  display: none;
+}
